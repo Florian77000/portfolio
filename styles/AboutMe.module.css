@@ -42,3 +42,18 @@
     height: 50%;
     display: flex;
 }
+
+@media (max-width:660px) {
+   .top, .down{
+    flex-direction: column;
+    height: auto;
+   }
+    .blocImg {
+        display: none;
+    }
+     .text, .blocImg {
+        width: 100%;             
+        padding: 20px;           
+  }
+   
+}
