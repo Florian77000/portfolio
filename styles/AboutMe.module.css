@@ -1,0 +1,44 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* section qui suis je */
+.top {
+    height: 50%;
+    display: flex;
+}
+
+.span {
+    font-size: 28px;
+    font-family: 'poppins', 'sans-serif';
+    font-weight: bold;
+}
+.text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 70px;
+    color: #3FC7E0;
+    font-family: 'roboto', sans-serif;
+    line-height: 40px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.blocImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* fin section qui suis je */
+
+.down {
+    height: 50%;
+    display: flex;
+}
