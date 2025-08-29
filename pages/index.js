@@ -5,8 +5,8 @@ import Education from '../components/Education';
 function Index() {
   return (
   <>
-    {/* <Home />
-    <AboutMe /> */}
+    <Home />
+    <AboutMe />
     <Education />
   </>
   )
