@@ -1,0 +1,77 @@
+.main {
+    background:linear-gradient(350deg,rgba(32, 156, 238, 1) 0%, rgba(63, 199, 224, 1) 50%, rgba(32, 156, 238, 1) 100%);;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    align-self: flex-end;
+}
+
+.skills {
+    height: 50%;
+    width: 50%;
+}
+.img {
+    width: 100px;
+}
+.blocImg {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.scholl {
+    height: 50%;
+    align-self: flex-end;
+    width: 50%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocCard {
+    display: flex;
+    justify-content: end;
+    padding-right: 70px;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    color: #209CEE;
+    border-radius: 10px;
+}
+
+
+.btnGroup {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #209CEE, #3FC7E0);
+  color: white;
+  font-size: 20px;
+}
+
+
+
