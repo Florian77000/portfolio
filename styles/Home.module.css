@@ -87,12 +87,7 @@
 
 /* _____________________________________________tablet view */
 @media (max-width:860px) {
-  .textH1 {
-  font-size: 16px;
-  }
-.textH3 {
-  font-size: 10px;
-  }
+ 
 .textButton {
   padding: 10px;
   }
@@ -106,9 +101,14 @@
     justify-content: center;
   }
   .hero {
-    line-height: 20px;
-    text-align: justify;
+    line-height: 28px;
     margin-right: 40px;
     margin-left: 40px;
   }
-}
+  .textH1 {
+    width: 100%;
+  }
+  .textH3 {
+    width: 100%;
+  }
+  }
