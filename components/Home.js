@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css';
+import Link from 'next/link'
 
 function Home() {
   return (
@@ -31,7 +32,9 @@ function Home() {
       </div>
 
       <div className={styles.button}>
-        <button className={styles.textButton}>Contactez moi</button>
+        <Link href='#contact'>
+          <button className={styles.textButton}>Contactez moi</button>
+        </Link>       
       </div>
 
       <div className={styles.image}>

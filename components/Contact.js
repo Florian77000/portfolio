@@ -14,7 +14,7 @@ export default function Contact () {
     }
 
     return (
-        <div className={styles.mainContact}>
+        <div id="contact" className={styles.mainContact}>
             <h1 className={styles.h1}>Contact</h1>
             <div className={styles.containerContact}>
                 <div className={styles.form}>
