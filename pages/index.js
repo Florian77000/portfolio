@@ -7,10 +7,10 @@ import Contact from '../components/Contact';
 function Index() {
   return (
   <>
-    {/* <Home />
+    <Home />
     <AboutMe />
     <Education />
-    <Project /> */}
+    <Project />
     <Contact />
   </>
   )
