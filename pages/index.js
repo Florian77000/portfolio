@@ -6,9 +6,9 @@ import Project from '../components/Project';
 function Index() {
   return (
   <>
-    {/* <Home />
+    <Home />
     <AboutMe />
-    <Education /> */}
+    <Education />
     <Project />
   </>
   )

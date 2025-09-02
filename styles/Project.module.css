@@ -69,3 +69,9 @@
   color: white;
   font-size: 12px;
 }
+
+@media (max-width:660px) {
+    .mainTitle {
+        text-align: center;
+    }
+}
