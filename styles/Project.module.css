@@ -23,6 +23,13 @@
     height: 500px;
     background: white;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+     transform: translateY(-5px) scale(1.02);
+     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .cardImage {
@@ -35,12 +42,19 @@
     border-top-right-radius: 10px;
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .cardTexte {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-     height: 60%;
+    height: 60%;
+    padding: 15px;
 }
 
 .h3 {
