@@ -1,8 +1,19 @@
-import styles from '../styles/Project.module.css'
+import { useState, useEffect } from 'react'
+import styles from '../styles/Project.module.css';
 
 export default function Project () {
-    return (
-        <div className={styles.mainProject}>
+
+    const [project, setProject] = useState([])
+    useEffect(() => {
+    fetch("http://localhost:3000/projects")
+    .then((response) => response.json())
+    .then((data) => {
+        setProject(data.data)
+    })
+    }, []);
+
+    const viewProject = project.map((e,i) => (
+        <div className={styles.mainProject} key={i}>
             <div className={styles.mainTitle}>
                  <h1>Mes projets</h1>
             </div>
@@ -13,19 +24,23 @@ export default function Project () {
                     </div>
                     <div className={styles.cardTexte}>
                         <div className={styles.title}>
-                            <h3 className={styles.h3}>Titre</h3>
-                            <p className={styles.description}>Texte d'explication</p>
+                            <h3 className={styles.h3}>{e.title}</h3>
+                            <p className={styles.description}>{e.description}</p>
                         </div>
                         <div className={styles.cardBtn}>
-                            <button className={styles.btn}>bouton 1</button>
-                            <button className={styles.btn}>bouton 2</button>
-                            <button className={styles.btn}>bouton 3</button>
+                          {e.button.map((btn, idx) => (
+                            <button key={idx} className={styles.btn}>
+                            {btn}
+                            </button>
+                          ))}
                         </div>    
                     </div>
                 </div>
-
             </div>
-            
         </div>
+        
+    ))
+    return (
+        <>{viewProject}</>
     )
 }
