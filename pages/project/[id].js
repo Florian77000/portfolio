@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import styles from '../../styles/ProjectId.module.css'
 
 export default function ProjectDetail() {
   const router = useRouter();
@@ -17,17 +18,28 @@ export default function ProjectDetail() {
       });
   }, [id]);
 
-  if (!project) return <p>Erreur chargemnt</p>;
+  if (!project) return <p>Erreur chargement</p>;
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>{project.title}</h1>
-      <p>{project.description}</p>
-      <div>
-        {project.button?.map((btn, i) => (
-          <button key={i}>{btn}</button>
-        ))}
+    <div className={styles.mainId}>
+      <div className={styles.titleId}>
+        <h1>{project.title}</h1>
       </div>
+      
+      <div className={styles.mainCard}>
+        <div className={styles.leftCard}>
+          <p>affichage de l'image</p>
+        </div>
+        <div className={styles.rightCard}>
+          <div className={styles.descriptionCard}>
+            <p>{project.description}</p>
+          </div>
+          <div className={styles.image2Card}>
+            <p>affichage de la petite image</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
