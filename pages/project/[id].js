@@ -28,7 +28,7 @@ export default function ProjectDetail() {
       
       <div className={styles.mainCard}>
         <div className={styles.leftCard}>
-          <p>affichage de l'image</p>
+          <img className={styles.img} src={project.image}></img>
         </div>
         <div className={styles.rightCard}>
           <div className={styles.descriptionCard}>
