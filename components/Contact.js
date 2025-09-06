@@ -1,16 +1,28 @@
 import styles from '../styles/Contact.module.css';
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 export default function Contact () {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [select, setSelect] = useState('');
 
-    const handleClick = () => {
-        setName('');
-        setEmail('');
-        setSelect('');
-        console.log(name, email, select)
+    const handleClick = (e) => {
+        e.preventDefault();
+        // preventDefault dit au navigateur : " ne fais pas ton comportement par défaut (reload), laisse-moi gérer l’action moi-même en JavaScript".
+        emailjs.send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            { name, email, select },
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        )
+        .then(() => {
+            alert("message envoyé");
+            console.log('click')
+            setName('');
+            setEmail('');
+            setSelect('');
+        }) 
     }
 
     return (
@@ -23,11 +35,11 @@ export default function Contact () {
                     <select className={styles.input} onChange={(e) => setSelect(e.target.value)} value={select}>
                         <option></option>
                         <option value='mise en relation'>Mise en relation</option>
-                        <option value='project application'>Porjet application</option>
+                        <option value='project application'>Projet application</option>
                     </select>
                 </div>
                 <div className={styles.formBtn}>
-                    <button onClick={() =>handleClick()} className={styles.btn}>Envoyer</button>
+                    <button onClick={(e) =>handleClick(e)} className={styles.btn}>Envoyer</button>
                 </div>
             </div>
         </div>
