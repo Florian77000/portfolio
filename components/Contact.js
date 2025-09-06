@@ -11,6 +11,14 @@ export default function Contact () {
     const handleSubmit = (e) => {
         e.preventDefault();
         // preventDefault dit au navigateur : " ne fais pas ton comportement par défaut (reload), laisse-moi gérer l’action moi-même en JavaScript".
+        
+        console.log(
+  'id: ', process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+  'template:' ,process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+  'retour email: ',process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_REPLY_ID,
+  'key: ',process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+);
+        //mail pour moi
         emailjs.send(
             process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
             process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
@@ -18,13 +26,20 @@ export default function Contact () {
             process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         )
         .then(() => {
+        //mail automatique à l'interlocuteur
+         return emailjs.send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_REPLY_ID, // ⚠️ un 2ème template dédié à l'auto-réponse
+            { name, email, select, message, to_email: email },
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        );
+    })
+        .then(() => {
             alert("message envoyé");
-            console.log('click')
             setName('');
             setEmail('');
             setSelect('');
             setMessage('');
-            console.log('message', message)
         }) 
     }
 
