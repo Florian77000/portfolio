@@ -15,14 +15,18 @@ export default function Contact () {
         // l’action moi-même en JavaScript, je veux vérifier que tout est ok avant de valider la fonction ici l'envoi du formulaire".
         
         const emailRegex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
+        const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
         if (!name || !email || !select) {
             setAlert ('Un des champs est vide')
             return;
         }
+        if (!nameRegex.test(name)) {
+            setAlert("Merci de ne saisir que des lettres dans le nom")
+            return;
+        } 
          if (!emailRegex.test(email)) {
             setAlert("Le format d'email est incorrect")
         return;}
-        
         
         //mail pour moi
         emailjs.send(
