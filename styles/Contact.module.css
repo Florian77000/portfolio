@@ -55,6 +55,12 @@
   font-weight: bold;
 }
 
+.alert {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
 @media (max-width:660px) {
     .h1 {
         text-align: center;

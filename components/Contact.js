@@ -6,18 +6,24 @@ export default function Contact () {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [select, setSelect] = useState('');
-    const [message, setMessage] = useState('')
+    const [message, setMessage] = useState('');
+    const [alert, setAlert] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // preventDefault dit au navigateur : " ne fais pas ton comportement par défaut (reload), laisse-moi gérer l’action moi-même en JavaScript".
+        // preventDefault dit au navigateur : " ne fais pas ton comportement par défaut (reload), laisse-moi gérer
+        // l’action moi-même en JavaScript, je veux vérifier que tout est ok avant de valider la fonction ici l'envoi du formulaire".
         
-        console.log(
-  'id: ', process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-  'template:' ,process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-  'retour email: ',process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_REPLY_ID,
-  'key: ',process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-);
+        const emailRegex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
+        if (!name || !email || !select) {
+            setAlert ('Un des champs est vide')
+            return;
+        }
+         if (!emailRegex.test(email)) {
+            setAlert("Le format d'email est incorrect")
+        return;}
+        
+        
         //mail pour moi
         emailjs.send(
             process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -59,7 +65,9 @@ export default function Contact () {
                     <div className={styles.formBtn}>
                         <button type='submit' className={styles.btn}>Envoyer</button>
                     </div>
+                    <p className={styles.alert}>{alert}</p>
                 </form>    
+               
             </div>
         </div>
     )
