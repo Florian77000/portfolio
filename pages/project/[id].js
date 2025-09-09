@@ -9,7 +9,7 @@ export default function ProjectDetail() {
 
   useEffect(() => {
     if (!id) return;
-    fetch(`http://localhost:3000/projects/${id}`)
+    fetch(`https://portfolio-backend-tau-gold.vercel.app/projects/${id}`)
       .then(res => res.json())
       .then(data => {
         if (data.result) {
