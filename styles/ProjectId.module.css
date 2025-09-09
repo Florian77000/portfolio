@@ -46,7 +46,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
+    padding: 0px;
+    gap: 10px;
 }
 
 .btn {
