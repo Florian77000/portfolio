@@ -27,7 +27,7 @@ export default function Project () {
                         </div>
                         <div className={styles.cardBtnProject}>
                             {e.button.map((btn, idx) => (
-                            <button key={idx} className={styles.btn}>
+                            <button key={idx} className={styles.btnProject}>
                             {btn}
                             </button>
                             ))}
