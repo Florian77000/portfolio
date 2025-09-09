@@ -87,11 +87,12 @@
     }
     .mainCard {
         flex-direction: column;
-        gap: 50px;
+        gap: 0px;
     }
     .rightCard, .leftCard{
         width: auto;
         padding: 20px;
+        gap: 20px;
     }
     .img{
         padding: 0;
@@ -103,7 +104,8 @@
     .descriptionCard {
         text-align: justify;
         padding: 0;
-        gap: 50px;
+        gap: 10px;
+        background-color: red;
     }
     .btn {
         width: 100%;
