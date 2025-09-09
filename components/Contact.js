@@ -14,7 +14,7 @@ export default function Contact () {
         // preventDefault dit au navigateur : " ne fais pas ton comportement par défaut (reload), laisse-moi gérer
         // l’action moi-même en JavaScript, je veux vérifier que tout est ok avant de valider la fonction ici l'envoi du formulaire".
         
-        const emailRegex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
         const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
         if (!name || !email || !select) {
             setAlert ('Un des champs est vide')
@@ -45,7 +45,7 @@ export default function Contact () {
         );
     })
         .then(() => {
-            alert("message envoyé");
+            setAlert("message envoyé");
             setName('');
             setEmail('');
             setSelect('');
