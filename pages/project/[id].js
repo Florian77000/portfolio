@@ -36,7 +36,7 @@ export default function ProjectDetail() {
             <button className={styles.btn}>Voir le projet</button>
           </div>
           <div className={styles.image2Card}>
-            <img className={styles.img2} src={project.imageSecond}></img>
+            <img className={styles.img} src={project.imageSecond}></img>
           </div>
         </div>
       </div>

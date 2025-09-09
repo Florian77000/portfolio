@@ -4,21 +4,21 @@
     height: 100vh;
 }
 
-.mainTitleProject {
+.mainTitle {
     padding: 20px;
     padding-left: 70px;
     color: white;
     font-family: 'poppins';
 }
 
-.cardContainerProject {
+.cardContainer {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     gap: 20px;
 }
 
-.cardProject {
+.card {
     width: 300px;
     height: 500px;
     background: white;
@@ -27,29 +27,29 @@
     transition: all 0.3s ease;
 }
 
-.cardProject:hover {
+.card:hover {
      transform: translateY(-5px) scale(1.02);
      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.cardImageProject {
+.cardImage {
     height: 40%;
 }
 
-.imgProject {
+.img {
     width: 100%;
     height:100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.titleProject {
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
-.cardTexteProject {
+.cardTexte {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,25 +58,25 @@
     padding: 15px;
 }
 
-.h3Project {
+.h3 {
     font-family: 'poppins';
     font-weight: bold;
     margin: 0;
     color: #209CEE;
 }
 
-.descriptionProject {
+.description {
     font-family: 'roboto';
     color: #3FC7E0;
     margin: 0;
 }
 
-.cardBtnProject {
+.cardBtn {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
-.btnProject {
+.btn {
   padding: 10px;
   border: none;
   border-radius: 15px;
@@ -86,10 +86,9 @@
 }
 
 @media (max-width:660px) {
-    .mainTitleProject {
+    .mainTitle {
         text-align: center;
         padding: 0;
         padding-top: 20px;
     }
-    
 }
