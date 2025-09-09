@@ -85,20 +85,24 @@
   font-size: 12px;
 }
 
+@media (max-width:860px) {
+   .mainTitle {
+      text-align: center;
+      padding: 0;
+      padding-top: 20px;
+      color: blue;
+   }
+
+   .cardContainer {
+      flex-wrap: wrap; /* pour éviter que les cards sortent de l’écran */
+   }
+}
+
 @media (max-width:660px) {
-    .mainProject {
-        height: 800px;
-        align-items: center;
-        padding: 0;
-    }
     .mainTitle {
         text-align: center;
-        color: red;
         padding: 0;
         padding-top: 20px;
     }
-    .card {
-    width: 100px;
-    height: 200px;
-    }
+    
 }
