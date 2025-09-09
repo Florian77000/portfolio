@@ -92,7 +92,7 @@
     .rightCard, .leftCard{
         width: auto;
         padding: 20px;
-        gap: 20px;
+        gap: 40px;
     }
     .img{
         padding: 0;
@@ -105,7 +105,7 @@
         text-align: justify;
         padding: 0;
         gap: 10px;
-        background-color: red;
+        background-color: blue;
     }
     .btn {
         width: 100%;
