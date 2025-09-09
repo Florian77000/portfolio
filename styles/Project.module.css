@@ -93,6 +93,7 @@
     }
     .mainTitle {
         text-align: center;
+        color: red;
         padding: 0;
         padding-top: 20px;
     }
