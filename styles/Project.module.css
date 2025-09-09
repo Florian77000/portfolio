@@ -85,19 +85,6 @@
   font-size: 12px;
 }
 
-@media (max-width:860px) {
-   .mainTitle {
-      text-align: center;
-      padding: 0;
-      padding-top: 20px;
-      color: blue;
-   }
-
-   .cardContainer {
-      flex-wrap: wrap; /* pour éviter que les cards sortent de l’écran */
-   }
-}
-
 @media (max-width:660px) {
     .mainTitle {
         text-align: center;
