@@ -21,7 +21,7 @@ function Home() {
         <div className={styles.h3}>
           <h3 className={styles.textH3}>
              Passionné par la création de solutions modernes et 
-             performantes. je vous accompagne dans toutes les étapes 
+             performantes, je vous accompagne dans toutes les étapes 
              de votre projet digital : de l’analyse du besoin à la 
              conception, du développement au déploiement. 
              Mon objectif est de réaliser des sites web et applications 
