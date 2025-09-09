@@ -20,7 +20,6 @@
 }
 
 .leftCard {
-    background-color: yellow;
     width: 50%;
     height: 70%;
 }
@@ -32,7 +31,6 @@
 }
 
 .rightCard {
-    background-color: green;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -40,12 +38,29 @@
 }
 
 .descriptionCard {
-    background-color: red;
-    height: 60%;
+    font-family: 'roboto';
+    color: white;
+    font-size: 18px;
+    height: 40%;
     display: flex;
     padding: 50px;
     justify-content: center;
+    
 }
+
+.image2Card {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2 { 
+    border-radius: 5px;
+    width: 70%;
+    height: 70%;
+}
+
 
 
 

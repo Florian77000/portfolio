@@ -9,9 +9,9 @@ function Index() {
   <>
     {/* <Home />
     <AboutMe />
-    <Education />
-    <Project /> */}
-    <Contact />
+    <Education /> */}
+    <Project />
+    {/* <Contact /> */}
   </>
   )
 }

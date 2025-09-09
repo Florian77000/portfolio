@@ -18,7 +18,7 @@ export default function Project () {
             <div className={styles.cardContainer} key={i}>
                 <div className={styles.card}>
                     <div className={styles.cardImage}>
-                        <img className={styles.img} src={e.image}></img>
+                        <img className={styles.img} src={e.imageMain}></img>
                     </div>
                     <div className={styles.cardTexte}>
                         <div className={styles.title}>

@@ -28,14 +28,14 @@ export default function ProjectDetail() {
       
       <div className={styles.mainCard}>
         <div className={styles.leftCard}>
-          <img className={styles.img} src={project.image}></img>
+          <img className={styles.img} src={project.imageMain}></img>
         </div>
         <div className={styles.rightCard}>
           <div className={styles.descriptionCard}>
             <p>{project.description}</p>
           </div>
           <div className={styles.image2Card}>
-            <p>affichage de la petite image</p>
+            <img className={styles.img2} src={project.imageSecond}></img>
           </div>
         </div>
       </div>
