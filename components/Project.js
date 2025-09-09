@@ -15,17 +15,17 @@ export default function Project () {
 
     const viewProject = project.map((e,i) => (
         <Link key={i} href={`/project/${e._id}`} passHref>
-            <div className={styles.cardContainer} key={i}>
-                <div className={styles.card}>
-                    <div className={styles.cardImage}>
-                        <img className={styles.img} src={e.imageMain}></img>
+            <div className={styles.cardContainerProject} key={i}>
+                <div className={styles.cardProject}>
+                    <div className={styles.cardImageProject}>
+                        <img className={styles.imgProject} src={e.imageMain}></img>
                     </div>
-                    <div className={styles.cardTexte}>
-                        <div className={styles.title}>
-                            <h3 className={styles.h3}>{e.title}</h3>
-                            <p className={styles.description}>{e.description}</p>
+                    <div className={styles.cardTexteProject}>
+                        <div className={styles.titleProject}>
+                            <h3 className={styles.h3Project}>{e.title}</h3>
+                            <p className={styles.descriptionProject}>{e.description}</p>
                         </div>
-                        <div className={styles.cardBtn}>
+                        <div className={styles.cardBtnProject}>
                             {e.button.map((btn, idx) => (
                             <button key={idx} className={styles.btn}>
                             {btn}
@@ -39,7 +39,7 @@ export default function Project () {
     ));
     return (
         <div className={styles.mainProject}>
-            <div className={styles.mainTitle}>
+            <div className={styles.mainTitleProject}>
                  <h1>Mes projets</h1>
             </div>
         {viewProject}
