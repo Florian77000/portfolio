@@ -50,6 +50,11 @@
     gap: 10px;
 }
 
+ .a {
+    width: 100%;
+    text-align: center;
+    }
+
 .btn {
   padding: 5px;
   width: 50%;
@@ -106,6 +111,8 @@
         padding: 0;
         gap: 10px;
     }
+
+   
     .btn {
         width: 100%;
     }

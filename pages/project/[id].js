@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import styles from '../../styles/ProjectId.module.css'
+import styles from '../../styles/ProjectId.module.css';
 
 export default function ProjectDetail() {
   const router = useRouter();
@@ -33,14 +33,15 @@ export default function ProjectDetail() {
         <div className={styles.rightCard}>
           <div className={styles.descriptionCard}>
             <p>{project.description}</p>
-            <button className={styles.btn}>Voir le projet</button>
+            <a href={project.urlWeb} target="_blank" rel="noopener noreferrer" className={styles.a}><button className={styles.btn}>Voir le projet</button></a>
+          {/* noopener permet de ne pas regarder sur ma page web d'origine (window opener) */}
+          {/* noreffer permet de ne pas savoir d'où l'on vient */}
           </div>
           <div className={styles.image2Card}>
             <img className={styles.img} src={project.imageSecond}></img>
           </div>
         </div>
       </div>
-
     </div>
   );
 }
