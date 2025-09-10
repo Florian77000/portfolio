@@ -2,7 +2,7 @@ import styles from '../styles/AboutMe.module.css';
 
 export default function AboutMe () {
     return (
-        <div className={styles.mainAboutMe}>
+        <div id="apropos" className={styles.mainAboutMe}>
             <div className={styles.top}>
                 <div className={styles.text}>
                     <span className={styles.span}>Qui suis-je? </span>

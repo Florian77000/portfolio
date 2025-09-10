@@ -12,10 +12,12 @@
   padding-right: 70px;
   gap: 30px;
   height: 15%;
-  color: white;
-  text-decoration: none;
-  list-style: none;
   font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+.linkText {
+  text-decoration: none;
+  color: white;
 }
 /* fin barre de navigation */
 

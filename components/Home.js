@@ -7,10 +7,10 @@ function Home() {
 
       {/* Barre de navigation du site */}
       <div className={styles.navbar}>
-        <li>A propos</li>
-        <li>Mes formations</li>
-        <li>Mes projets</li>
-        <li>Contact</li>
+        <li> <Link href="#apropos"><a className={styles.linkText}>A propos</a></Link></li>
+        <li><Link href="#formation"><a className={styles.linkText}>Mes formations</a></Link></li>
+        <li><Link href="#project"><a className={styles.linkText}>Mes projets</a></Link></li>
+        <li><Link href="#contact"><a className={styles.linkText}>Contact</a></Link></li>
       </div>
       
       {/* Partie de présentation du site, accroche du site */}

@@ -20,7 +20,7 @@ export default function Education () {
     ]
 
     return (
-        <div className={styles.mainEducation}>
+        <div id="formation" className={styles.mainEducation}>
             <div className={styles.skills}>
                 <h1 className={styles.h1}>Mes skills</h1>
                 <div className={styles.blocImg}>

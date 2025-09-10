@@ -38,7 +38,7 @@ export default function Project () {
         </Link>
     ));
     return (
-        <div className={styles.mainProject}>
+        <div id="project" className={styles.mainProject}>
             <div className={styles.mainTitle}>
                  <h1>Mes projets</h1>
             </div>
