@@ -62,12 +62,17 @@
 }
 
 @media (max-width:660px) {
+
     .h1 {
         text-align: center;
         padding: 0;
         padding-top: 20px;
     }
     
+    .containerContact {
+        justify-content: start;
+        margin-top: 20px;
+    }
     .input, .btn{
         width: 60%;
     }

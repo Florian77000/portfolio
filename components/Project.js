@@ -42,6 +42,7 @@ export default function Project () {
             <div className={styles.mainTitle}>
                  <h1>Mes projets</h1>
             </div>
-        {viewProject}
+            <div className={styles.cardContainer}>{viewProject}</div>
+        
     </div>
     )};
