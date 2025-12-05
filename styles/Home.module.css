@@ -20,6 +20,22 @@
   text-align: center;
   text-decoration: none;
   color: white;
+  position: relative;
+}
+
+.linkText::after{
+content: ""; /* créer un element vide pour appliquer du style, sinon after ne peut fonctionner */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background-color: #3FC7E0;
+  width: 0%;
+  transition: width 0.8s ease;
+}
+
+.linkText:hover::after {
+  width: 100%;
 }
 /* fin barre de navigation */
 
@@ -39,12 +55,12 @@
 
 .textH1 {
   font-family: 'poppins', sans-serif;
-  font-size: 28px;
+  font-size: 36px;
 }
 
 .textH3 {
   font-family: 'roboto', sans-serif;
-  font-size: 16px;
+  font-size: 24px;
 }
 /* fin de section de texte */
 
@@ -100,6 +116,9 @@
 
 /* _____________________________________________smartphone view */
 @media (max-width:660px) {
+  .linkText {
+    position: none;
+  }
    .navbar {
     padding:10px;
     justify-content: center;
@@ -110,8 +129,10 @@
   }
   .textH1 {
     width: 100%;
+    font-size: 16px;
   }
   .textH3 {
     width: 100%;
+    font-size: 14px;
   }
   }
