@@ -6,7 +6,7 @@ export default function Project () {
 
     const [project, setProject] = useState([])
     useEffect(() => {
-    fetch("https://portfolio-backend-tau-gold.vercel.app/projects")
+    fetch("https://portfolio-backend-qlss.vercel.app/projects")
     .then((response) => response.json())
     .then((data) => {
         setProject(data.data)
