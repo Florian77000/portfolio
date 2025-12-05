@@ -99,13 +99,12 @@
 /* _____________________________________________smartphone view */
 @media (max-width:660px) {
    .navbar {
-    padding-right: 0px;
+    padding:10px;
     justify-content: center;
   }
   .hero {
     line-height: 28px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin: 20px;
   }
   .textH1 {
     width: 100%;

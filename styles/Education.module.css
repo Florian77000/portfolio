@@ -92,7 +92,9 @@
         width: 20px;
     }
     .scholl{
+        width: 100%;
         align-self: center;
+        padding: 10px;
     }
     .h1 {
         padding: 0;
@@ -107,17 +109,14 @@
         justify-content: center;
     }
     .card {
-        width: 200px;
+        width: 300px;
         height: 200px;
-        font-size: 10px;
     }
     
     .btnGroup {
         gap: 5px;
     }
-    .btn {
-        font-size: 10px;
-    }
+    
    
 }
 
