@@ -16,6 +16,8 @@
   list-style: none;
 }
 .linkText {
+  display: flex;
+  text-align: center;
   text-decoration: none;
   color: white;
 }
@@ -104,7 +106,7 @@
   }
   .hero {
     line-height: 28px;
-    margin: 20px;
+    margin: 10px;
   }
   .textH1 {
     width: 100%;

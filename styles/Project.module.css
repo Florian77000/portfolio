@@ -92,6 +92,10 @@
 }
 
 @media (max-width:660px) {
+    .mainProject {
+        height: auto;
+        padding: 20px;
+    }
     .card {
         height: auto;
     }
@@ -101,7 +105,6 @@
     .mainTitle {
         text-align: center;
         padding: 0;
-        padding-top: 20px;
     }
     .cardContainer {
         flex-wrap: wrap;
