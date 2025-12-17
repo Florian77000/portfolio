@@ -15,7 +15,7 @@ export default function Education () {
 
     //tableau pour stocker les formations
     const education =[
-        {title:'Développeur application web et mobile', sousTitle:'La capsule', btn: ['React','NodeJs','MongoDB']},
+        {title:'Développeur application web et mobile', sousTitle:'La capsule', btn: ['React','React Native', 'NodeJs','MongoDB']},
         {title:'Développeur application web et mobile', sousTitle:'Studi', btn:['HTML','CSS','PHP','JavaScript', 'WorPress', 'MySql']},
     ]
 
