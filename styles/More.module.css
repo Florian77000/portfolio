@@ -28,3 +28,12 @@
 .title {
     height: 80px;
 }
+
+@media (max-width:660px) {
+    .card {
+        height: auto;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
