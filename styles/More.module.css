@@ -1,0 +1,30 @@
+.more {
+    margin: 40px;
+    height: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    color: #3FC7E0;
+    text-align: center;
+}
+
+.card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 300px;
+}
+
+.cardIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 200px;
+    border: 1px #3FC7E0 groove;
+    border-radius: 5px;
+}
+
+.title {
+    height: 80px;
+}
