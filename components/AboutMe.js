@@ -1,4 +1,5 @@
 import styles from '../styles/AboutMe.module.css';
+import Link from 'next/link';
 
 export default function AboutMe () {
     return (
@@ -25,12 +26,17 @@ export default function AboutMe () {
                 </div>
                 <div className={styles.text}>
                     <span className={styles.span}>Pour qui?</span>
-                    Vous êtes un professionnel et vous souhaitez développer votre visibilité ou 
+                    <p>Vous êtes un professionnel et vous souhaitez développer votre visibilité ou 
                     attirer de nouveaux clients grâce à internet ?
                     J'accompagne les indépendants, artisans et entrepreneurs dans la création de 
                     leur site vitrine personnalisé.
-                    Mon objectif est simple : transformer votre savoir-faire en une présence en ligne 
+                    Mon objectif est simple: transformer votre savoir-faire en une présence en ligne 
                     élégante, professionnelle et parfaitement adaptée à vos besoins.
+                    Ce que je réalise pour vous : Je gère votre projet de A à Z : de 
+                    la structure des pages à la mise en ligne, en passant par l'optimisation pour
+                    le référencement local (SEO) 
+                    afin que vos clients puissent vous trouver facilement sur Google: <Link href='#contact'><button className={styles.btnContact}>Me contacter</button></Link>
+                    </p>
                 </div>
             </div>
         </div>
