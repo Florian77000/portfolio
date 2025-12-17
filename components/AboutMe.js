@@ -24,12 +24,13 @@ export default function AboutMe () {
                     <img className={styles.img} src='./computer.jpg' alt='photo me representant en format cartoon'></img>
                 </div>
                 <div className={styles.text}>
-                    <span className={styles.span}>Qu'est ce qu'un développeur web? </span>
-                    Le concepteur développeur web est un professionnel qui, 
-                    à partir d’un cahier des charges, conçoit et développe des sites web et des applications web.
-                    il crée des sites et applications web qui captivent, informent et interagissent. Il concrétise 
-                    les idées en plateformes web interactives, fonctionnelles, esthétiques et sécurisés. De l'ébauche d'un site à son 
-                    déploiement final, son savoir-faire est essentiel pour garantir une expérience utilisateur optimale. 
+                    <span className={styles.span}>Pour qui?</span>
+                    Vous êtes un professionnel et vous souhaitez développer votre visibilité ou 
+                    attirer de nouveaux clients grâce à internet ?
+                    J'accompagne les indépendants, artisans et entrepreneurs dans la création de 
+                    leur site vitrine personnalisé.
+                    Mon objectif est simple : transformer votre savoir-faire en une présence en ligne 
+                    élégante, professionnelle et parfaitement adaptée à vos besoins.
                 </div>
             </div>
         </div>
