@@ -16,7 +16,7 @@ function Home() {
       {/* Partie de présentation du site, accroche du site */}
       <div className={styles.hero}>
         <div className={styles.h1}>
-          <h1 className={styles.textH1}>Bonjour je m'appelle Florian, concepteur développeur web junior.</h1>
+          <h1 className={styles.textH1}>Bonjour je m'appelle Florian, concepteur développeur d'application web et mobile.</h1>
         </div>
         <div className={styles.h3}>
           <h3 className={styles.textH3}>
