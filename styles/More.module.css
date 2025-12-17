@@ -20,10 +20,17 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: 200px;
-    border: 1px #3FC7E0 groove;
-    border-radius: 5px;
+    width: 360px;
+    border: 1px #3FC7E0 solid;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
+
+.cardIn:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
 
 .title {
     height: 80px;
